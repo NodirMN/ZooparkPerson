@@ -1,0 +1,9 @@
+.btn-success{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: auto;
+}
+.form-label{
+    margin-top: 10px;
+}

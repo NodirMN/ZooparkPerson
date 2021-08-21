@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="text-center">Zoopark</h1>
+
+        <table class="table table-bordered ">
+        </table>
+        <button class="btn btn-success " data-bs-toggle="modal" data-bs-target="#newWorkerModal">Yangi
+            hayvon</button>
+        <div class="modal fade" id="newWorkerModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Yangi hayvon</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="userName" class="form-label">Hayvon turi</label>
+                                <input type="text" class="form-control" id="userTur">
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="userAddress" class="form-label">Tugilgan joyi</label>
+                                <input type="text" class="form-control" id="userAddress">
+                            </div>
+                            <div class="mb-3">
+                                <label for="userAddress" class="form-label">Vazni</label>
+                                <input type="text" class="form-control" id="userkg">
+                            </div>
+                            <div class="mb-3">
+                                <label for="userVazin" class="form-label">Rangi</label>
+                                <input type="text" class="form-control" id="usercolor">
+                            </div>
+                            <div class="form-title">Yashash muxiti</div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="userProg1" value="Subtropik">
+                                <label class="form-check-label" for="userProg1">Subtopik</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="userProg2" value="Tropik">
+                                <label class="form-check-label" for="userProg2">Tropik</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="userProg3" value="Chol">
+                                <label class=" form-check-label" for="userProg3">Chol</label>
+                            </div>
+                            <div class="mb-3">
+                                <label for="userVazin" class="form-label">Laqabi</label>
+                                <input type="text" class="form-control" id="userLaqabi">
+                            </div>
+                            <select class="form-select mt-3 " id="userDepart">
+                                <option selected>Qaysi zonaga biriktirilishi</option>
+                                <option value="Sudralib yuruvchi zona">Sudralib yuruvchi zona</option>
+                                <option value="Sut emizuvchi zona">Sut emizuvch zona</option>
+                                <option value="Yirtqich zona">Yirtqich zona</option>
+                                <option value="O'tho'r zona">O'txor zona</option>
+                            </select>
+                            <div class="mb-3">
+                                <label for="userVazin" class="form-label">Xodim javob beradi:</label>
+                                <input type="text" class="form-control" id="userxodim">
+                            </div>
+                            <div class="mb-3">
+                                <label for="userVazin" class="form-label">Qachondan zooparkda yashab boshlashi</label>
+                                <input type="date" class="form-control" id="userday">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bekor qilish</button>
+                        <button type="button" class="btn btn-primary" onclick="add()">Saqlash</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
